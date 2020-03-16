@@ -1,0 +1,146 @@
+.teller {
+  text-align: center;
+  .main__title {
+    h2 {
+      line-height: 2.5rem;
+    }
+  }
+  &__code {
+    margin-bottom: 50px;
+    margin-top: 80px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+      margin-top: 60px;
+    }
+    @media (max-width: 375px) {
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+    > span {
+      color: #e41e13;
+      border: solid 1px #cccccc;
+      display: inline-block;
+      font-size: 4.5rem;
+      padding: 32px 64px;
+    }
+  }
+  &__note {
+    > span {
+      color: #666666;
+      display: inline-block;
+      font-size: 1.375rem;
+      line-height: 2rem;
+      width: 100%;
+      max-width: 606px;
+    }
+  }
+}
+.teller0 {
+  &--table {
+    font-size: 1.25rem;
+    border: solid 1px #ccc;
+    margin-bottom: 24px;
+    th {
+      text-transform: uppercase;
+    }
+    td {
+      padding: 10px 20px;
+      vertical-align: middle;
+      @media (max-width: 1024px) {
+        padding: 10px;
+      }
+    }
+    .btn {
+      border-radius: 4px;
+      min-width: 105px;
+      min-height: 38px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-transform: none;
+      font-size: 1.25rem;
+      line-height: 20px;
+      color: #ffffff;
+      &-secondary {
+        background-color: #666666;
+        @media (max-width: 912px) {
+          margin-bottom: 5px;
+        }
+        &:hover {
+          background-color: #555555;
+        }
+      }
+    }
+  }
+}
+
+.teller1 {
+  &--form {
+    margin-bottom: 30px;
+  }
+  .form-group {
+    position: relative;
+  }
+  label {
+    &.required {
+      &:after {
+        content: '*';
+        color: #e02b27;
+        font-size: 1.2rem;
+        margin: 0 0 0 5px;
+      }
+    }
+    > .btn {
+      border-radius: 3px;
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: none;
+      position: absolute;
+      min-width: 0;
+      min-height: 30px;
+      line-height: 18px;
+      right: 5px;
+    }
+  }
+}
+
+.actions-toolbar {
+  &--right {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+  .btn {
+    min-width: 200px;
+    @media (max-width: 912px) {
+      margin-bottom: 25px;
+    }
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+
+#viewIdentity {
+  .close {
+    background: url(../images/close-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 auto;
+    opacity: 1;
+  }
+  .modal-header {
+    min-height: 66px;
+  }
+  .modal-body {
+    padding-bottom: 56px;
+    text-align: center;
+    h4 {
+      font-weight: 400;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HSBC - Teller 1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/bootstrap-datepicker.min.css"/>
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <section class="header--top">
+        <div class="container">
+          <div class="row">
+            <ul class="header__links">
+              <li><a href="#">Menu 1</a></li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Chào BUIDANGBINH</a></li>
+              <li><a href="#">Đăng xuất</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="header--main">
+        <div class="container">
+          <div class="row">
+            <a href="index.html" class="header__logo col"><img src="images/hsbc-logo.svg" alt="HSBC" /></a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Page Content -->
+    <main class="main--content">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col main__title">
+              <h2>THÔNG TIN KHÁCH HÀNG</h2>
+            </div>
+          </div>
+          <div class="teller1">
+            <div class="row">
+              <form class="col teller1--form" action="">
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="name" class="required">Họ và Tên</label>
+                    <input type="text" class="form-control" id="name" value="BUI DANG BINH" readonly>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="phone" class="required">Số điện thoại</label>
+                    <input type="text" class="form-control" id="phone" value="0918028328" readonly>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="identity" class="required">
+                      Số CMND<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#viewIdentity">Xem hình</a>
+                    </label>
+                    <input type="text" class="form-control" id="identity" value="1234567890" readonly>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="acc-number" class="required">Số Tài khoản</label>
+                    <input type="text" class="form-control" id="acc-number" value="123456789" readonly>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="money" class="required">Số tiền bằng số</label>
+                    <input type="text" class="form-control" id="money" value="15.000.000" readonly>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="money-type" class="required">Loại tiền</label>
+                    <div class="select">
+                      <select class="form-control" id="money-type" disabled>
+                        <option value="1">VNĐ</option>
+                        <option value="2">USD</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="moneyInText" class="required">Số tiền bằng chữ</label>
+                  <input type="email" class="form-control" id="moneyInText" value="MUOI LAM TRIEU DONG CHAN" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="note" class="required">Nội dung nộp tiền</label>
+                  <input type="email" class="form-control" id="note" value="NOP TIEN MAT VAO TAI KHOAN" readonly>
+                </div>
+              </form>
+            </div>
+            <div class="actions-toolbar row">
+              <div class="actions-toolbar--left col-md-6">
+                <button class="btn btn-primary"><i class="fa fa-bell"></i> Gọi tên</button>
+                <button class="btn btn-primary"><i class="fa fa-print"></i> In phiếu</button>
+              </div>
+              <div class="actions-toolbar--right col-md-6">
+                <button class="btn btn-secondary"><i class="fa fa-angle-left"></i> Trở về</button>
+                <button class="btn btn-primary">Tiếp theo <i class="fa fa-angle-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <!-- /Page Content -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer--copyright">
+        <div class="container">
+          <div class="row">
+            <i class="col">Copyright 2020 HSBC Vietnam. All rights reserved.</i>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewIdentity" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>Mặt trước</h4>
+                  <img src="images/identity.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                  <h4>Mặt sau</h4>
+                  <img src="images/identity.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+
+</html>

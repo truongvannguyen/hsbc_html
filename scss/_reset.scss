@@ -44,13 +44,16 @@ a:focus {
 .form-group {
   label {
     margin-bottom: 4px;
+    font-size: 1.5rem;
+    font-weight: 300;
   }
 }
 
 .form-control {
   border-radius: 0;
-  border: solid 1px #b7b7b7;
+  border: solid 1px #cccccc;
   background: #fff;
+  font-size: 1.5rem;
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #333333;
     font-size: 1rem;
@@ -79,6 +82,14 @@ a:focus {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
   }
+}
+
+.form-group {
+  margin-bottom: 1.375rem;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #ffffff;
 }
 
 .form-check,
@@ -160,6 +171,9 @@ a:focus {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active {
   background: #e41e13;
+  .fa {
+    margin-left: 15px;
+  }
 }
 
 .btn-secondary,
@@ -167,6 +181,9 @@ a:focus {
 .btn-secondary:not(:disabled):not(.disabled):active {
   background: #cccccc;
   color: #666666;
+  .fa {
+    margin-right: 15px;
+  }
 }
 
 .btn-primary:hover,
@@ -218,4 +235,20 @@ a:focus {
 
 .container {
   max-width: 1280px;
+}
+
+@media (min-width: 992px){
+  .modal-lg, .modal-xl {
+    max-width: 990px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .modal-lg, .modal-xl {
+    max-width: 700px;
+  }
+}
+
+.modal-header {
+  border-bottom: 0;
 }

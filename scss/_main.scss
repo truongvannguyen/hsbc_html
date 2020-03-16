@@ -80,25 +80,50 @@
       color: #666666;
       font-size: 1rem;
     }
+    .note {
+      color: #e41e13;
+      font-size: 1.375rem;
+      padding-bottom: 10px;
+      font-style: italic;
+    }
   }
   &__filter {
     padding-bottom: 18px;
     padding-top: 18px;
     margin-bottom: 0;
-    max-width: 190px;
     margin-left: auto;
     position: relative;
-    input[type="text"] {
-      width: 100%;
+    &--by-date {
+      max-width: 190px;
+      input[type="text"] {
+        width: 100%;
+      }
+      .fa-calendar {
+        color: #cccccc;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+        font-size: 1.375rem;
+        pointer-events: none;
+      }
     }
-    .fa-calendar {
-      color: #cccccc;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translate(0, -50%);
-      font-size: 1.375rem;
-      pointer-events: none;
+    &--by-cate {
+      display: flex;
+      justify-content: flex-end;
+      .select {
+        margin-bottom: 0;
+        width: 215px;
+        + .select {
+          margin-left: 20px;
+        }
+        select {
+          font-size: 17px;
+          font-weight: 300;
+          font-style: italic;
+          padding-right: 0;
+        }
+      }
     }
   }
 }
