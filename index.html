@@ -8,156 +8,89 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>LOGIVAN</title>
+    <title>HSBC</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick-carousel/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="vendor/slick-carousel/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="vendor/jscrollpane/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/bootstrap-datepicker.min.css"/>
     <link href="css/styles.css" rel="stylesheet">
 
   </head>
 
   <body>
 
-    <!-- Navigation -->
-    <header class="main-header">
-      <div class="logo-container">
+    <!-- Header -->
+    <header>
+      <section class="header--top">
         <div class="container">
           <div class="row">
-            <div class="d-flex d-lg-none align-items-center logo-content">
-              <div class="logo">
-                <a class="navbar-brand" href="index.html">
-                  <img src="images/Logivan-Logo.png" alt="Logivan" class="d-block img-fluid" />
-                </a>
-                <button class="navbar-toggler navbar-toggler-right d-lg-none" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="#" class="searchToggleBtn" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
-              </div>
-            </div>
+            <ul class="header__links">
+              <li><a href="#"><img src="images/uk.svg" alt="" width="32">English</a></li>
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="main-nav mt-lg-3 sticky">
+      </section>
+      <section class="header--main">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-xl-6 d-none d-lg-flex align-items-center order-lg-1 main-search">
-              <div class="search-toggle">
-                <a href="#" class="searchToggleBtn" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
-              </div>
-              <a href="chuxe.html" class="btn btn-secondary">Trở thành tài xế</a>
-            </div>
-            <div class="col-lg-7 col-xl-6 main-nav-content">
-              <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav d-lg-flex">
-                    <li class="nav-item logo d-none d-lg-flex">
-                      <a class="nav-link" href="index.html" title=""><img src="images/Logivan-Logo.png" alt="" /></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html" title="">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" title="">Sản phẩm</a>
-                      <ul>
-                        <li class="nav-item"><a class="nav-link" href="chuhang.html">Chủ hàng</a></li>
-                        <li class="nav-item"><a class="nav-link" href="chuxe.html">Chủ xe</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="news.html" title="">Tin tức</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="career.html" title="">Nghề nghiệp</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html" title="">Liên hệ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="faq.html" title="">Hỗ trợ</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
-          <div class="row" id="searchToggle">
-            <div class="col">
-              <form class="search-container">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Nhập thông tin bạn muốn tìm kiếm">
-                  <button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
-                  <div id="search_autocomplete" class="search_autocomplete">
-                    <ul class="list-unstyled">
-                      <li><a href="#"><span>Tin tức</span> hoạt động</a></li>
-                      <li><a href="#"><span>Tin tức</span> Logivan</a></li>
-                      <li><a href="#"><span>Tin tức</span> giao thông vận tải</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
-            </div>
+            <a href="index.html" class="header__logo col"><img src="images/hsbc-logo.svg" alt="HSBC" /></a>
           </div>
         </div>
-      </div>
+      </section>
     </header>
 
     <!-- Page Content -->
-    <main id="main-contain" class="main-contain">
-      <section id="home-top-banner" class="main-slider">
-        <div class="slide-item" style="background-image: url('images/slide-img.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="col poster-container">
-                <div class="poster-content">
-                  <div class="mb-4 mb-lg-5" data-element="content">With Logivan,<br>no truck wil<br>ever run empty</div>
-                  <button class="btn btn-primary">Chuyển hàng ngay</button>
-                </div>
+    <main class="main--content">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col main__title">
+              <h2>DANH SÁCH KHÁCH HÀNG</h2>
+            </div>
+          </div>
+          <div class="row queue">
+            <div class="col-md-6 queue__ordinal">
+              <div class="queue__ordinal--counter">
+                <h3 class="counter--title">QUẦY 001</h3>
+                <ul class="counter--list">
+                  <li class="red"><span>001</span>BUI DANG BINH</li>
+                  <li class="red"><span>002</span>NGUYEN VU LE QUYEN</li>
+                  <li class="yellow"><span>003</span>BUI MINH TUE</li>
+                  <li><span>004</span>BUI NHA TUE</li>
+                </ul>
               </div>
+              <div class="queue__ordinal--counter">
+                <h3 class="counter--title">QUẦY 002</h3>
+                <ul class="counter--list">
+                  <li class="red"><span>001</span>BUI DANG BINH</li>
+                  <li class="red"><span>002</span>NGUYEN VU LE QUYEN</li>
+                  <li class="yellow"><span>003</span>BUI MINH TUE</li>
+                  <li><span>004</span>BUI NHA TUE</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 queue__advert m-4 m-md-0">
+              <div class="queue__advert--img"><a href="#"><img src="images/queue/queue_01.jpg" alt="" class="img-fluid" /></a></div>
+              <div class="queue__advert--img"><a href="#"><img src="images/queue/queue_01.jpg" alt="" class="img-fluid" /></a></div>
             </div>
           </div>
         </div>
-        <div class="slide-item" style="background-image: url('images/slide-img.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="col poster-container">
-                <div class="poster-content">
-                  <div class="mb-4 mb-lg-5" data-element="content">With Logivan,<br>no truck wil<br>ever run empty</div>
-                  <button class="btn btn-primary">Chuyển hàng ngay</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slide-item" style="background-image: url('images/slide-img.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="col poster-container">
-                <div class="poster-content">
-                  <div class="mb-4 mb-lg-5" data-element="content">With Logivan,<br>no truck wil<br>ever run empty</div>
-                  <button class="btn btn-primary">Chuyển hàng ngay</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </section>
     </main>
     <!-- /Page Content -->
 
     <!-- Footer -->
-    <footer class="main-footer pt-3">
-      <div class="container">
-        <div class="row">
-          <div class="col mb-4 mb-lg-0">
-            <div class="footer-brand pt-3 pb-3 pt-md-5 pb-md-5">
-              <a href="#" class="d-block"><img src="images/Logivan-Logo.svg" class="img-fluid" alt="" /></a>
-            </div>
+    <footer>
+      <div class="footer--copyright">
+        <div class="container">
+          <div class="row">
+            <i class="col">Copyright 2020 HSBC Vietnam. All rights reserved.</i>
           </div>
         </div>
       </div>
@@ -167,6 +100,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datepicker/bootstrap-datepicker.min.js"></script>
     <script src="js/theme.js"></script>
   </body>
 
