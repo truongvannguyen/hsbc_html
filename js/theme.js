@@ -5,4 +5,15 @@ $(document).ready(function () {
         autoclose: true,
         todayHighlight: true,
     });
+
+    if($('#fullpage').length) {
+        $('#fullpage').fullpage({
+            //options here
+            anchors: ['start'],
+            autoScrolling: false,
+            controlArrows: false,
+            slidesNavigation: true,
+        });
+    }
+
 });
