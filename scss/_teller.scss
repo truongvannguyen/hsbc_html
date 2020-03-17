@@ -81,14 +81,6 @@
     position: relative;
   }
   label {
-    &.required {
-      &:after {
-        content: '*';
-        color: #e02b27;
-        font-size: 1.2rem;
-        margin: 0 0 0 5px;
-      }
-    }
     > .btn {
       border-radius: 3px;
       font-size: 1rem;
@@ -99,6 +91,17 @@
       min-height: 30px;
       line-height: 18px;
       right: 5px;
+    }
+  }
+}
+
+label {
+  &.required {
+    &:after {
+      content: '*';
+      color: #e02b27;
+      font-size: 1.2rem;
+      margin: 0 0 0 5px;
     }
   }
 }

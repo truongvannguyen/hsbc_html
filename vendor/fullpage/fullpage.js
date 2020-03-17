@@ -264,7 +264,7 @@
             'cards'
         ];
 
-        displayWarnings();
+        //displayWarnings();
 
         //easeInOutCubic animation included in the plugin
         window.fp_easings = deepExtend(window.fp_easings, {
@@ -394,10 +394,8 @@
         function setMouseHijack(value){
             if(value){
                 setMouseWheelScrolling(true);
-                addTouchHandler();
             }else{
                 setMouseWheelScrolling(false);
-                removeTouchHandler();
             }
         }
 

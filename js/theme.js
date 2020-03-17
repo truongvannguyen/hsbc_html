@@ -12,7 +12,7 @@ $(document).ready(function () {
             anchors: ['start'],
             autoScrolling: false,
             controlArrows: false,
-            slidesNavigation: true,
+            slidesNavigation: true
         });
     }
 
