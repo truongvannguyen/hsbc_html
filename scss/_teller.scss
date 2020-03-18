@@ -35,6 +35,7 @@
     }
   }
 }
+
 .teller0 {
   &--table {
     font-size: 1.25rem;
@@ -104,6 +105,10 @@ label {
       margin: 0 0 0 5px;
     }
   }
+}
+
+.processing {
+  color: #e41e13;
 }
 
 .actions-toolbar {
