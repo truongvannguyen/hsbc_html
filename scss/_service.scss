@@ -295,9 +295,22 @@
   &--current {
     width: 58%;
     text-align: center;
+    position: relative;
+    video {
+      width: 516px;
+      max-width: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+    img {
+      width: 516px;
+    }
     @media (max-width: 768px) {
       width: 100%;
     }
+  }
+  #captureBtn-confirm {
+    display: none;
   }
 }
 .custom-file {
