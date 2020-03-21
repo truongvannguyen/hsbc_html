@@ -4,27 +4,48 @@ function handleError(error) {
 const constraints = {video: true};
 
 (function() {
-    const screenshotButton = document.querySelector('#captureBtn-back');
-    const confirmButton = document.querySelector('#captureBtn-confirm');
-    const img = document.querySelector('#screenshot-back');
-    const video = document.querySelector('#video-back');
+    const screenshotButtonBack = document.querySelector('#captureBtn-back');
+    const confirmButtonBack = document.querySelector('#captureBtn-confirm-back');
+    const imgBack = document.querySelector('#screenshot-back');
+    const videoBack = document.querySelector('#video-back');
 
-    const canvas = document.createElement('canvas');
+    const screenshotButtonFront = document.querySelector('#captureBtn-front');
+    const confirmButtonFront = document.querySelector('#captureBtn-confirm-front');
+    const imgFront = document.querySelector('#screenshot-front');
+    const videoFront = document.querySelector('#video-front');
+
+    const canvasBack = document.createElement('canvas');
+    const canvasFront = document.createElement('canvas');
 
     startVideo();
 
-    screenshotButton.onclick = function() {
-        if (video.paused){
-            confirmButton.style.display = 'none';
-            screenshotButton.innerHTML = '<i class="fa fa-camera"></i>&nbsp;Chụp hình';
+    screenshotButtonBack.onclick = function() {
+        if (videoBack.paused){
+            confirmButtonBack.style.display = 'none';
+            screenshotButtonBack.innerHTML = '<i class="fa fa-camera"></i>&nbsp;Chụp hình';
             startVideo();
         }else {
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            canvas.getContext('2d').drawImage(video, 0, 0);
+            canvasBack.width = videoBack.videoWidth;
+            canvasBack.height = videoBack.videoHeight;
+            canvasBack.getContext('2d').drawImage(videoBack, 0, 0);
             // Other browsers will fall back to image/png
-            img.src = canvas.toDataURL('image/webp');
-            stopVideo();
+            imgBack.src = canvasBack.toDataURL('image/webp');
+            stopVideo(videoBack, screenshotButtonBack, confirmButtonBack);
+        }
+    };
+
+    screenshotButtonFront.onclick = function() {
+        if (videoFront.paused){
+            confirmButtonFront.style.display = 'none';
+            screenshotButtonFront.innerHTML = '<i class="fa fa-camera"></i>&nbsp;Chụp hình';
+            startVideo();
+        }else {
+            canvasFront.width = videoFront.videoWidth;
+            canvasFront.height = videoFront.videoHeight;
+            canvasFront.getContext('2d').drawImage(videoFront, 0, 0);
+            // Other browsers will fall back to image/png
+            imgFront.src = canvasFront.toDataURL('image/webp');
+            stopVideo(videoFront, screenshotButtonFront, confirmButtonFront);
         }
     };
 
@@ -32,7 +53,8 @@ const constraints = {video: true};
 
     function handleSuccess(stream) {
         localMediaStream = stream;
-        video.srcObject = stream;
+        videoBack.srcObject = stream;
+        videoFront.srcObject = stream;
     }
 
     function startVideo() {
@@ -40,10 +62,10 @@ const constraints = {video: true};
         then(handleSuccess).catch(handleError);
     }
 
-    function stopVideo() {
+    function stopVideo(video, screenshotBtn, confirmBtn) {
         video.pause();
-        screenshotButton.innerHTML = '<i class="fa fa-camera"></i>&nbsp;Chụp lại';
-        confirmButton.style.display = 'inline-block';
+        screenshotBtn.innerHTML = '<i class="fa fa-camera"></i>&nbsp;Chụp lại';
+        confirmBtn.style.display = 'inline-block';
     }
 
 })();

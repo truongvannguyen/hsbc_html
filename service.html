@@ -16,7 +16,6 @@
 
   <!-- Custom styles for this template -->
   <link rel="stylesheet" type="text/css" href="vendor/datepicker/bootstrap-datepicker.min.css"/>
-  <link rel="stylesheet" type="text/css" href="vendor/fullpage/fullpage.css"/>
   <link rel="stylesheet" type="text/css" href="vendor/slick-carousel/slick.css"/>
   <link rel="stylesheet" type="text/css" href="vendor/slick-carousel/slick-theme.css"/>
   <link href="css/styles.css" rel="stylesheet">
@@ -47,29 +46,29 @@
   </section>
 </header>
 
-<div class="service">
+<div class="service viewing-start-0" id="service-container">
   <!-- Page Content -->
-  <main class="main--content" id="fullpage">
-    <section class="section" id="section1">
+  <main class="main--content">
+    <section class="section" id="fullpage">
 
       <!-- Section welcome -->
-      <div class="slide" id="slide1" data-anchor="slide1">
+      <div class="slide" id="slide1">
         <div class="container">
-          <div class="row">
+          <div class="row mh-100 align-items-center">
             <div class="col-md-7">
               <div class="service__welcome">
                 <h2>DỊCH VỤ NGÂN HÀNG TẠI QUẦY</h2>
                 <div  class="service__welcome--desc">Dịch vụ tại quầy tư vấn HSBC chưa bao giờ dễ dàng đến thế!<br/>Hãy bấm nút Bắt đầu để tận hưởng dịch vụ hỗ trợ khách hàng tiên tiến của chúng tôi.</div>
-                <a href="service.html#start/slide2" class="btn btn-primary">Hãy bắt đầu <i class="fa fa-angle-right"></i></a>
+                <button onclick="nextServiceSlide()" class="btn btn-primary">Hãy bắt đầu <i class="fa fa-angle-right"></i></button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="slide" id="slide2" data-anchor="slide2">
+      <div class="slide" id="slide2">
         <div class="container">
-          <div class="row">
+          <div class="row mh-100 align-items-center">
             <div class="col">
               <div class="service__choices">
                 <div class="service__choices--wrap">
@@ -77,7 +76,7 @@
                     <img src="images/service-1.jpg" alt="">
                     <h3>Nộp tiền mặt</h3>
                     <div class="service__choices--desc">Chúng tôi giúp bạn điền nhanh phiếu nộp tiền và lấy số thứ tự tại quầy tư vấn</div>
-                    <div class="action-toolbar"><a href="service.html#start/slide3" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></a></div>
+                    <div class="action-toolbar"><button onclick="nextServiceSlide()" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></button></div>
                   </div>
                 </div>
                 <div class="service__choices--wrap">
@@ -85,7 +84,7 @@
                     <img src="images/service-2.jpg" alt="">
                     <h3>Rút tiền mặt</h3>
                     <div class="service__choices--desc">Chúng tôi giúp bạn điền nhanh phiếu rút tiền và lấy số thứ tự tại quầy tư vấn</div>
-                    <div class="action-toolbar"><a href="service.html#start/slide3" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></a></div>
+                    <div class="action-toolbar"><button onclick="nextServiceSlide()" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></button></div>
                   </div>
                 </div>
                 <div class="service__choices--wrap">
@@ -93,7 +92,7 @@
                     <img src="images/service-3.jpg" alt="">
                     <h3>Mở tài khoản</h3>
                     <div class="service__choices--desc">Chúng tôi giúp bạn điền nhanh những thông tin tài khoản và lấy số thứ tự tại quầy tư vấn</div>
-                    <div class="action-toolbar"><a href="service.html#start/slide3" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></a></div>
+                    <div class="action-toolbar"><button onclick="nextServiceSlide()" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></button></div>
                   </div>
                 </div>
                 <div class="service__choices--wrap">
@@ -101,7 +100,7 @@
                     <img src="images/service-1.jpg" alt="">
                     <h3>Nộp tiền mặt 1</h3>
                     <div class="service__choices--desc">Chúng tôi giúp bạn điền nhanh phiếu nộp tiền và lấy số thứ tự tại quầy tư vấn</div>
-                    <div class="action-toolbar"><a href="service.html#start/slide3" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></a></div>
+                    <div class="action-toolbar"><button onclick="nextServiceSlide()" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></button></div>
                   </div>
                 </div>
                 <div class="service__choices--wrap">
@@ -109,7 +108,7 @@
                     <img src="images/service-2.jpg" alt="">
                     <h3>Rút tiền mặt 2</h3>
                     <div class="service__choices--desc">Chúng tôi giúp bạn điền nhanh phiếu rút tiền và lấy số thứ tự tại quầy tư vấn</div>
-                    <div class="action-toolbar"><a href="service.html#start/slide3" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></a></div>
+                    <div class="action-toolbar"><button onclick="nextServiceSlide()" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></button></div>
                   </div>
                 </div>
                 <div class="service__choices--wrap">
@@ -117,7 +116,7 @@
                     <img src="images/service-3.jpg" alt="">
                     <h3>Mở tài khoản 3</h3>
                     <div class="service__choices--desc">Chúng tôi giúp bạn điền nhanh những thông tin tài khoản và lấy số thứ tự tại quầy tư vấn</div>
-                    <div class="action-toolbar"><a href="service.html#start/slide3" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></a></div>
+                    <div class="action-toolbar"><button onclick="nextServiceSlide()" class="btn btn-primary">Lựa chọn <i class="fa fa-angle-right"></i></button></div>
                   </div>
                 </div>
               </div>
@@ -126,9 +125,9 @@
         </div>
       </div>
 
-      <div class="slide" id="slide3" data-anchor="slide3">
+      <div class="slide" id="slide3">
         <div class="container">
-          <div class="row justify-content-center service__form form-identity">
+          <div class="row mh-100 service__form form-identity">
             <div class="col-md-10">
               <div class="form-identity__container">
                 <div class="form__section">
@@ -155,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center service__form form-information">
+          <div class="row mh-100 service__form form-information">
             <div class="col">
               <form class="form-information__container" action="">
                 <div class="main__title">
@@ -202,7 +201,7 @@
               </form>
             </div>
           </div>
-          <div class="row justify-content-center service__form confirm-information">
+          <div class="row mh-100 service__form confirm-information">
             <div class="col">
               <div class="form-information__container">
                 <div class="main__title">
@@ -247,7 +246,7 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center service__form service-completed">
+          <div class="row mh-100 service__form service-completed">
             <div class="col">
               <div class="service-completed__container">
                 <div class="main__title">
@@ -270,7 +269,30 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center service__form identity-capture">
+          <div class="row mh-100 service__form identity-capture">
+            <div class="col">
+              <div class="identity-capture__container">
+                <div class="main__title pb-0">
+                  <h2 class="text-center mb-3">VUI LÒNG CHỤP HÌNH MẶT TRƯỚC<br/>CMND/PASSPORT</h2>
+                </div>
+                <div class="identity-capture--content">
+                  <div class="identity-capture--sample">
+                    <img src="images/identity-front.jpg" alt="" class="img-fluid">
+                    <div class="note"><i>Làm theo hình mẫu</i></div>
+                  </div>
+                  <div class="identity-capture--current">
+                    <video autoplay id="video-front"></video>
+                    <img src="images/identity-mask.png" alt="" id="screenshot-front" class="img-fluid">
+                  </div>
+                </div>
+                <div class="actions-toolbar text-center">
+                  <button class="btn btn-primary" id="captureBtn-front"><i class="fa fa-camera"></i>&nbsp;Chụp hình</button>
+                  <button class="btn btn-primary" id="captureBtn-confirm-front" onclick="goToServiceStep(5)">Xác nhận</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mh-100 service__form identity-capture">
             <div class="col">
               <div class="identity-capture__container">
                 <div class="main__title pb-0">
@@ -288,28 +310,7 @@
                 </div>
                 <div class="actions-toolbar text-center">
                   <button class="btn btn-primary" id="captureBtn-back"><i class="fa fa-camera"></i>&nbsp;Chụp hình</button>
-                  <button class="btn btn-primary" id="captureBtn-confirm" onclick="goToServiceStep(5)">Xác nhận</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center service__form identity-capture">
-            <div class="col">
-              <div class="identity-capture__container">
-                <div class="main__title pb-0">
-                  <h2 class="text-center mb-3">VUI LÒNG CHỤP HÌNH MẶT TRƯỚC<br/>CMND/PASSPORT</h2>
-                </div>
-                <div class="identity-capture--content">
-                  <div class="identity-capture--sample">
-                    <img src="images/identity-front.jpg" alt="" class="img-fluid">
-                    <div class="note"><i>Làm theo hình mẫu</i></div>
-                  </div>
-                  <div class="identity-capture--current">
-                    <img src="images/identity-mask.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-                <div class="actions-toolbar text-center">
-                  <button class="btn btn-primary" id="captureBtn-front"><i class="fa fa-camera"></i>&nbsp;Chụp hình</button>
+                  <button class="btn btn-primary" id="captureBtn-confirm-back">Xác nhận</button>
                 </div>
               </div>
             </div>
@@ -338,7 +339,6 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/datepicker/bootstrap-datepicker.min.js"></script>
 <script src="vendor/slick-carousel/slick.min.js"></script>
-<script src="vendor/fullpage/fullpage.js"></script>
 <script src="js/captureVideo.js"></script>
 <script src="js/theme.js"></script>
 </body>

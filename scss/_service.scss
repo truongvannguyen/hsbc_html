@@ -1,43 +1,49 @@
-@media (max-width: 768px) {
-  .fp-section {
-    padding: 15px 0;
+.slick-dots li{
+  width: 16px;
+  button {
+    width: 11px;
+    height: 11px;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    text-indent: -9999px;
   }
-  .fp-section,
-  .fp-tableCell {
-    min-height: 100%;
-    height: auto !important;
+  &.slick-active {
+    button {
+      background-color: #e41e13;
+    }
   }
 }
-.fp-viewing-start {
-  &-slide1 {
-    .service {
-      background: url("../images/service-0.jpg") center;
-      background-size: cover;
+#slide2 {
+  overflow-x: hidden;
+}
+.viewing-start {
+  &-0 {
+    background: url("../images/service-0.jpg") center;
+    background-size: cover;
+  }
+  &-1,
+  &-2 {
+    background: url("../images/service-01.jpg") center;
+    background-size: cover;
+    footer {
+      color: #333333;
     }
   }
-  &-slide2,
-  &-slide3 {
-    .service {
-      background: url("../images/service-01.jpg") center;
-      background-size: cover;
-      footer {
-        color: #333333;
-      }
-    }
-  }
-  &-slide3 {
-    .fp-slidesNav {
+  &-2 {
+    .slick-dots {
       display: none;
     }
+    .slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }
   }
 }
+
 .service {
   .main {
     &--content {
-      height: calc(100vh - 151px) !important;
-      @media (max-width: 768px) {
-        height: auto !important;
-      }
+      min-height: calc(100vh - 151px) !important;
+      height: auto !important;
     }
   }
   footer {
@@ -49,6 +55,9 @@
       letter-spacing: 2px;
       line-height: 2.25rem;
     }
+  }
+  .mh-100 {
+    min-height: calc(100vh - 151px);
   }
   &__welcome {
     background-color: rgba(255, 255, 255, 0.7);
@@ -64,6 +73,12 @@
       line-height: 1.625rem;
       margin-bottom: 2rem;
     }
+  }
+  &__form {
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
   }
   &__form + &__form {
     display: none;
@@ -129,7 +144,8 @@
     background: url("../images/service-02.jpg") center;
     background-size: cover;
     .main--content {
-      min-height: calc(100vh - 100px);
+      height: auto !important;
+      min-height: calc(100vh - 100px) !important;
     }
     footer {
       display: none;
@@ -300,6 +316,8 @@
       width: 516px;
       max-width: 100%;
       position: absolute;
+      left: 0;
+      top: 0;
       z-index: 1;
     }
     img {
@@ -309,7 +327,8 @@
       width: 100%;
     }
   }
-  #captureBtn-confirm {
+  #captureBtn-confirm-back,
+  #captureBtn-confirm-front {
     display: none;
   }
 }
