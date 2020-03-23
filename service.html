@@ -246,29 +246,6 @@
               </div>
             </div>
           </div>
-          <div class="row mh-100 service__form service-completed">
-            <div class="col">
-              <div class="service-completed__container">
-                <div class="main__title">
-                  <h2 class="text-center mb-5">BẠN ĐÃ HOÀN TẤT ĐIỀN PHIẾU NỘP TIỀN<br/>VUI LÒNG ĐẾN QUẦY TƯ VẤN</h2>
-                </div>
-                <div class="service-completed--content">
-                  <div class="item">
-                    <h4>Số thứ tự</h4>
-                    <div class="red">05</div>
-                  </div>
-                  <div class="item">
-                    <h4>Quầy</h4>
-                    <div class="red">3</div>
-                  </div>
-                </div>
-                <div class="actions-toolbar text-center">
-                  <button class="btn btn-primary mr-0 mb-4" onclick="goToServiceStep(4)">Hoàn Tất</button>
-                  <div class="note">Quý khách cần hỗ trợ thêm dịch vụ khác?<br/><a href="#">Click vào đây</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="row mh-100 service__form identity-capture">
             <div class="col">
               <div class="identity-capture__container">
@@ -287,7 +264,7 @@
                 </div>
                 <div class="actions-toolbar text-center">
                   <button class="btn btn-primary" id="captureBtn-front"><i class="fa fa-camera"></i>&nbsp;Chụp hình</button>
-                  <button class="btn btn-primary" id="captureBtn-confirm-front" onclick="goToServiceStep(5)">Xác nhận</button>
+                  <button class="btn btn-primary" id="captureBtn-confirm-front" onclick="goToServiceStep(4)">Xác nhận</button>
                 </div>
               </div>
             </div>
@@ -310,7 +287,30 @@
                 </div>
                 <div class="actions-toolbar text-center">
                   <button class="btn btn-primary" id="captureBtn-back"><i class="fa fa-camera"></i>&nbsp;Chụp hình</button>
-                  <button class="btn btn-primary" id="captureBtn-confirm-back">Xác nhận</button>
+                  <button class="btn btn-primary" id="captureBtn-confirm-back" onclick="goToServiceStep(5)">Xác nhận</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mh-100 service__form service-completed">
+            <div class="col">
+              <div class="service-completed__container">
+                <div class="main__title">
+                  <h2 class="text-center mb-5">BẠN ĐÃ HOÀN TẤT ĐIỀN PHIẾU NỘP TIỀN<br/>VUI LÒNG ĐẾN QUẦY TƯ VẤN</h2>
+                </div>
+                <div class="service-completed--content">
+                  <div class="item">
+                    <h4>Số thứ tự</h4>
+                    <div class="red">05</div>
+                  </div>
+                  <div class="item">
+                    <h4>Quầy</h4>
+                    <div class="red">3</div>
+                  </div>
+                </div>
+                <div class="actions-toolbar text-center">
+                  <button class="btn btn-primary mr-0 mb-4">Hoàn Tất</button>
+                  <div class="note">Quý khách cần hỗ trợ thêm dịch vụ khác?<br/><a href="#">Click vào đây</a></div>
                 </div>
               </div>
             </div>
