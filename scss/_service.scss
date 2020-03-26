@@ -18,12 +18,12 @@
 }
 .viewing-start {
   &-0 {
-    background: url("../images/service-0.jpg") center;
+    background: url("../images/service-0.jpg") top center;
     background-size: cover;
   }
   &-1,
   &-2 {
-    background: url("../images/service-01.jpg") center;
+    background: url("../images/service-01.jpg") top center;
     background-size: cover;
     footer {
       color: #333333 !important;
